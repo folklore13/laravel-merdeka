@@ -1,0 +1,81 @@
+.jumbotron {
+    background-image: url('../img/taylorswift-background.jpg');
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.jumbotron h1, .jumbotron p {
+    color: white;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.image-wrapper {
+    height: 22vm;
+    width: 22vm;
+}
+
+.image-wrapper img {
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 2px 4px 6px 0 rgba(22, 22, 26, 0.18);
+}
+
+@media screen and (min-width: 568px) {
+    .cards-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .card {
+        margin: 0 .5em;
+        width: calc(100%/3);
+    }
+}
+
+
+@media screen and (max-width: 567px) {
+    .card:not(:first-child) {
+        display: none;
+    }
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h1 {
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+
+footer {
+    background-color: rgb(166,153,235);
+    width: 100%;
+    height: 100px;
+}
+
+footer h1 {
+    font-size: medium;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
